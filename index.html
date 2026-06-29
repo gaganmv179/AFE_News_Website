@@ -1,181 +1,148 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global News Hub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFE Projects Portfolio</title>
 
-<style>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+        body{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:white;
+        }
 
-body{
-    background:#f4f4f4;
-}
+        header{
+            text-align:center;
+            padding:40px 20px;
+        }
 
-header{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
+        header h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
 
-nav{
-    background:#1f2937;
-    padding:15px;
-    text-align:center;
-}
+        header p{
+            font-size:18px;
+            color:#ddd;
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-}
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+            padding:30px 0 60px;
+        }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:30px auto;
-}
+        .card{
+            background:white;
+            color:#333;
+            border-radius:15px;
+            padding:25px;
+            box-shadow:0 10px 20px rgba(0,0,0,.3);
+            transition:.3s;
+        }
 
-.hero{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    margin-bottom:25px;
-}
+        .card:hover{
+            transform:translateY(-10px);
+        }
 
-.news-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
+        .card h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
 
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+        .card p{
+            margin-bottom:20px;
+            line-height:1.6;
+        }
 
-.card h3{
-    margin-bottom:10px;
-}
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:#0d6efd;
+            color:white;
+            padding:12px 20px;
+            border-radius:8px;
+            transition:.3s;
+        }
 
-.card p{
-    margin-bottom:15px;
-}
+        .btn:hover{
+            background:#084298;
+        }
 
-.btn{
-    background:#111827;
-    color:white;
-    padding:10px 15px;
-    text-decoration:none;
-    border-radius:5px;
-}
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#111;
+            color:#ccc;
+        }
+    </style>
 
-footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-
-</style>
 </head>
-
 <body>
 
 <header>
-<h1>Global News Hub</h1>
-<p>Your Daily Source of News</p>
+    <h1>AFE Projects Portfolio</h1>
+    <p>Artificial Intelligence & Full Stack Engineering Projects</p>
 </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Technology</a>
-<a href="#">Sports</a>
-<a href="#">Business</a>
-<a href="#">World</a>
-</nav>
+<section class="container">
 
-<div class="container">
+    <div class="card">
+        <h2>Project 1</h2>
+        <p><strong>ACP Project (C Programming)</strong></p>
+        <a class="btn" href="https://github.com/gaganmv179/GAGAN_M_V_R25EJ033/blob/main/ACP.c" target="_blank">
+            View Project
+        </a>
+    </div>
 
-<div class="hero">
-<h2>Breaking News</h2>
-<p>
-Artificial Intelligence continues to transform industries worldwide,
-creating new opportunities in education, healthcare, robotics and software development.
-</p>
-</div>
+    <div class="card">
+        <h2>Project 2</h2>
+        <p><strong>Hugging Face Model Analysis</strong></p>
+        <a class="btn" href="https://github.com/gaganmv179/GAGAN_M_V_R25EJ033/blob/main/project2_hugging_face_model_analysis.md" target="_blank">
+            View Project
+        </a>
+    </div>
 
-<div class="news-grid">
+    <div class="card">
+        <h2>Project 3</h2>
+        <p><strong>Personal Portfolio Website</strong></p>
+        <a class="btn" href="https://gaganmv179.github.io/GAGAN_M_V_R25EJ033/" target="_blank">
+            Visit Website
+        </a>
+    </div>
 
-<div class="card">
-<h3>Technology News</h3>
-<p>
-Researchers introduce new AI models capable of understanding images and text simultaneously.
-</p>
-<a href="#" class="btn">Read More</a>
-</div>
+    <div class="card">
+        <h2>Project 4</h2>
+        <p><strong>AFE News Website</strong></p>
+        <a class="btn" href="https://gaganmv179.github.io/AFE_News_Website/" target="_blank">
+            Visit Website
+        </a>
+    </div>
 
-<div class="card">
-<h3>Sports News</h3>
-<p>
-International sporting events continue to attract millions of viewers across the globe.
-</p>
-<a href="#" class="btn">Read More</a>
-</div>
+    <div class="card">
+        <h2>Presentation</h2>
+        <p><strong>AFE 4 Projects Portfolio PPT</strong></p>
+        <a class="btn" href="https://github.com/gaganmv179/AFE_News_Website/blob/main/AIFE_4Projects_Portfolio.pptx" target="_blank">
+            View PPT
+        </a>
+    </div>
 
-<div class="card">
-<h3>Business News</h3>
-<p>
-Technology companies increase investment in artificial intelligence and cloud computing.
-</p>
-<a href="#" class="btn">Read More</a>
-</div>
-
-<div class="card">
-<h3>Education News</h3>
-<p>
-Universities are expanding AI and data science programs to meet industry demand.
-</p>
-<a href="#" class="btn">Read More</a>
-</div>
-
-<div class="card">
-<h3>Science News</h3>
-<p>
-Scientists make advancements in renewable energy and sustainable technologies.
-</p>
-<a href="#" class="btn">Read More</a>
-</div>
-
-<div class="card">
-<h3>World News</h3>
-<p>
-Global collaboration continues to drive innovation in technology and research.
-</p>
-<a href="#" class="btn">Read More</a>
-</div>
-
-</div>
-
-</div>
+</section>
 
 <footer>
-© 2026 Global News Hub | Developed by Gagan M V
+    <p>© 2026 Gagan M V | AFE Projects Portfolio</p>
 </footer>
 
 </body>
 </html>
-```
